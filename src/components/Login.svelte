@@ -1,11 +1,11 @@
 <script>
     let user = {
-        login: '',
+        number_phone: '',
         password:'',
     }
 
     function loginHandler(event){
-        fetch('/article/fetch/post/user', {
+        fetch('https://192.168.253.139:5000/password', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json;charset=utf-8'
@@ -28,7 +28,7 @@
 <div class="login">
     <img src="avatar.png" alt="аватар" class="login__avatar">
     <div class="login__form">
-        <input type="text" placeholder="Номер телефона" bind:value={user.login}>
+        <input type="text" placeholder="Номер телефона" bind:value={user.number_phone}>
         <input type="password" placeholder="Пароль" bind:value={user.password}><br>
         <input type="button" name="login" value="Войти" on:click={loginHandler}>
     </div>
