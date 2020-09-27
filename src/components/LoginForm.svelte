@@ -39,7 +39,7 @@
             headers: {
                 'Content-Type': 'application/json;'
             },
-            body: JSON.stringify($user),
+            body: JSON.stringify(fields),
             rejectUnauthorized: false
         })
             .then(response => response.json())

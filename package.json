@@ -9,6 +9,7 @@
     "start": "node __sapper__/build"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.2.2",
     "compression": "^1.7.1",
     "polka": "next",
     "sirv": "^1.0.0"
